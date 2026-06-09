@@ -12,8 +12,8 @@ body {
 
 /* Contenedor principal */
 .contenedor {
-    width: 90%;
-    max-width: 1200px;
+    width: 80%;
+    max-width: 1150px;
     margin: 0 auto;
 }
 
