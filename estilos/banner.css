@@ -1,28 +1,29 @@
 .banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 600px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+min-height: 600px;
 }
 
 .banner .textos {
-    width: 45%;
+width: 45%;
 }
 
 .banner .textos h1 {
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 76px;
-    color: #4D4D4D;
-    margin-bottom: 20px;
+font-size: 64px;
+font-weight: 600;
+line-height: 76px;
+color: #4D4D4D;
+margin-bottom: 16px;
 }
 
 .banner .textos p {
-    color: #717171;
-    font-size: 16px;
-    margin-bottom: 32px;
+color: #717171;
+font-size: 16px;
+line-height: 24px;
+margin-bottom: 32px;
 }
 
 .banner img {
-    width: 42%;
+width: 42%;
 }
