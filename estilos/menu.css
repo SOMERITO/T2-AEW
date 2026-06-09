@@ -1,53 +1,56 @@
 .nav-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 22px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 22px 0;
 }
 
 .nav-flex img {
-    width: auto;
-    height: 24px;
+width: 111.49px;
+height: 20.66px;
 }
 
 .menu-links {
-    display: flex;
-    gap: 30px;
+display: flex;
+gap: 30px;
 }
 
 .menu-links a {
-    text-decoration: none;
-    color: #18191F;
-    font-size: 16px;
-    font-weight: 500;
+text-decoration: none;
+color: #18191F;
+font-size: 16px;
+font-weight: 500;
 }
 
-.menu-links a:hover,
+.menu-links a:hover {
+color: #4CAF4F;
+}
+
 .menu-links a.active {
-    color: #4CAF4F; /* Color primario al activarse */
-    font-weight: 600;
+color: #2194F3;
+font-weight: 600;
 }
 
 .menu-botones {
-    display: flex;
-    gap: 14px;
+display: flex;
+gap: 14px;
 }
 
 .menu-botones button {
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
+border: none;
+padding: 10px 20px;
+border-radius: 4px;
+cursor: pointer;
+font-size: 14px;
+font-weight: 500;
 }
 
 .btn-login {
-    background: transparent;
-    color: #4CAF4F;
+background: transparent;
+color: #4CAF4F;
 }
 
 .btn-signup {
-    background-color: #4CAF4F;
-    color: white;
+background-color: #4CAF4F;
+color: white;
 }
