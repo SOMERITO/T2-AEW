@@ -1,64 +1,59 @@
 .grupo-img {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .grupo-img img {
-width: 48px;
-height: auto;
+    height: 48px; /* Restringimos el alto para uniformidad */
+    width: auto;
 }
 
 .grupo-card {
-display: flex;
-justify-content: center;
-gap: 60px;
-margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 50px;
 }
 
 .card {
-background-color: #FFFFFF;
-width: 300px;
-padding: 24px;
-border-radius: 8px;
-text-align: center;
-box-shadow: 0px 2px 8px rgba(171, 190, 209, 0.2);
+    background-color: #FFFFFF;
+    flex: 1; /* Permite que todas las tarjetas tengan el mismo ancho */
+    padding: 24px 32px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 2px 8px rgba(171, 190, 209, 0.2);
 }
 
 .icono-contenedor {
-margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .icono-contenedor img {
-width: 65px;
-height: auto;
+    width: 65px;
+    height: auto;
 }
 
 .card h3 {
-color: #4D4D4D;
-font-size: 28px;
-font-weight: 700;
-line-height: 36px;
-margin-bottom: 12px;
+    color: #4D4D4D;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 12px;
 }
 
 .card p {
-color: #717171;
-font-size: 14px;
-line-height: 20px;
+    color: #717171;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .seccion-centrada h2 {
-color: #4D4D4D;
-font-size: 36px;
-font-weight: 600;
-line-height: 44px;
-}
-
-.subtitulo {
-color: #717171;
-font-size: 16px;
-line-height: 24px;
-margin-top: 8px;
+    color: #4D4D4D;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
 }
