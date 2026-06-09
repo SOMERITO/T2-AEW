@@ -10,10 +10,14 @@ width: 111.49px;
 height: 20.66px;
 }
 
+.menu-links {
+display: flex;
+gap: 30px;
+}
+
 .menu-links a {
 text-decoration: none;
 color: #18191F;
-margin: 0 18px;
 font-size: 16px;
 font-weight: 400;
 }
@@ -21,6 +25,11 @@ font-weight: 400;
 .menu-links a.active {
 color: #2194F3;
 font-weight: 500;
+}
+
+.menu-botones {
+display: flex;
+gap: 14px;
 }
 
 .menu-botones button {
@@ -37,6 +46,6 @@ color: #4CAF4F;
 }
 
 .btn-signup {
-background: #4CAF4F;
+background-color: #4CAF4F;
 color: white;
 }
