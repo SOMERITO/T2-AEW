@@ -1,39 +1,98 @@
-.banner {
-display: flex;
-justify-content: space-between;
-align-items: center;
-min-height: 500px;
-padding: 40px 0;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  }
 
-.banner .textos {
-width: 52%;
-}
-
-.banner .textos h1 {
-font-size: 64px;
-font-weight: 600;
-line-height: 76px;
+body {
+background-color: #FFFFFF;
 color: #4D4D4D;
-margin-bottom: 16px;
 }
 
-.banner .textos p {
+.contenedor {
+width: 80%;
+max-width: 1152px;
+margin: 0 auto;
+}
+
+.color-fondo {
+background-color: #F5F7FA;
+}
+
+.seccion-centrada {
+text-align: center;
+padding: 60px 0;
+}
+
+.subtitulo {
 color: #717171;
 font-size: 16px;
 line-height: 24px;
+margin-top: 8px;
+}
+
+.btn-primario {
+background-color: #4CAF4F;
+color: #FFFFFF;
+border: none;
+border-radius: 4px;
+padding: 14px 32px;
+font-size: 16px;
+cursor: pointer;
+}
+
+.btn-primario:hover {
+background-color: #43A047;
+}
+
+.from {
+color: #4CAF4F;
+}
+
+.cta-final {
+background-color: #F5F7FA;
+padding: 48px 0;
+}
+
+.contenedor-cta {
+width: 887px;
+margin: 0 auto;
+text-align: center;
+}
+
+.contenedor-cta h2 {
+font-size: 64px;
+font-weight: 600;
+line-height: 76px;
+color: #263238;
 margin-bottom: 32px;
 }
 
-.banner img {
-width: 38%;
-height: auto;
+.footer-oscuro {
+background-color: #263238;
+color: #FFFFFF;
+padding: 40px 0;
 }
 
-.lessons {
-color: #4D4D4D;
+.footer-flex {
+display: flex;
+align-items: flex-start;
 }
 
-.banner .btn-primario {
-margin-top: 8px;
+.footer-info {
+width: 100%;
+}
+
+.footer-logo {
+width: 111.49px;
+height: 20.66px;
+margin-bottom: 20px;
+}
+
+.footer-info p {
+font-size: 14px;
+line-height: 20px;
+margin-bottom: 8px;
+color: #F5F7FA;
 }
