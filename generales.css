@@ -1,15 +1,16 @@
+/* Configuracion global del sitio */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contenedor {
-    width: 90%;
-    max-width: 1200px;
+    width: 85%;
+    max-width: 1140px;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 60px 0;
 }
 
 .color-fondo {
@@ -18,33 +19,111 @@
 
 .seccion-centrada {
     text-align: center;
+    padding-bottom: 40px;
+}
+
+.seccion-centrada h2 {
+    font-size: 28px;
+    color: #4D4D4D;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.subtitulo {
+    color: #717171;
+    font-size: 14px;
+    margin-bottom: 30px;
 }
 
 .btn-primario {
     background-color: #4CAF50;
-    color: white;
-    padding: 12px 24px;
+    color: #FFFFFF;
+    padding: 12px 28px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.btn-primario:hover {
+    background-color: #388E3C;
 }
 
 .texto-verde {
     color: #4CAF50;
 }
 
-.subtitulo {
-    color: #717171;
-    margin-top: 10px;
-}
-
+/* Footer general */
 .footer-oscuro {
     background-color: #263238;
-    color: white;
+    color: #F5F7FA;
     padding: 40px 0;
 }
 
-.footer-oscuro img {
-    margin-bottom: 15px;
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0;
+}
+
+.footer-info {
+    width: 30%;
+}
+
+.footer-logo {
+    margin-bottom: 25px;
+    height: 24px;
+}
+
+.footer-info p {
+    font-size: 13px;
+    color: #F5F7FA;
+    line-height: 22px;
+}
+
+.footer-enlaces {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna-enlaces {
+    display: flex;
+    flex-direction: column;
+}
+
+.columna-enlaces h4 {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.columna-enlaces a {
+    color: #F5F7FA;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 12px;
+    transition: color 0.2s;
+}
+
+.columna-enlaces a:hover {
+    color: #4CAF50;
+}
+
+.input-contenedor input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-size: 13px;
+    width: 200px;
+}
+
+.input-contenedor input::placeholder {
+    color: #D9DBE1;
 }
