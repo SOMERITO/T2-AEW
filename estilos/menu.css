@@ -1,35 +1,39 @@
 .nav-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 25px 0;
+}
+
+.nav-flex img {
+width: 155px;
 }
 
 .menu-links a {
-    text-decoration: none;
-    color: #18191F;
-    margin: 0 18px;
-    font-size: 15px;
+text-decoration: none;
+color: #18191F;
+margin: 0 18px;
+font-size: 15px;
 }
 
 .menu-links a.active {
-    font-weight: 600;
-    color: #2194F3;
+color: #2194F3;
+font-weight: 600;
 }
 
 .menu-botones button {
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
 }
 
 .btn-login {
-    background: transparent;
-    color: #4CAF4F;
+background: #F5F7FA;
+color: #717171;
 }
 
 .btn-signup {
-    background: #4CAF4F;
-    color: white;
+background: #4CAF4F;
+color: white;
 }
