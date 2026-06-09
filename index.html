@@ -1,316 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexcent</title>
-    
-    <style>
-        /* ==================== ESTILOS GENERALES ==================== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .contenedor {
-            width: 85%;
-            max-width: 1140px;
-            margin: 0 auto;
-            padding: 60px 0;
-        }
-
-        .color-fondo {
-            background-color: #F5F7FA;
-        }
-
-        .seccion-centrada {
-            text-align: center;
-            padding-bottom: 40px;
-        }
-
-        .seccion-centrada h2 {
-            font-size: 28px;
-            color: #4D4D4D;
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-
-        .subtitulo {
-            color: #717171;
-            font-size: 14px;
-            margin-bottom: 30px;
-        }
-
-        .btn-primario {
-            background-color: #4CAF50;
-            color: #FFFFFF;
-            padding: 12px 28px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 500;
-            transition: background 0.3s;
-        }
-
-        .btn-primario:hover {
-            background-color: #388E3C;
-        }
-
-        .texto-verde {
-            color: #4CAF50;
-        }
-
-        /* ==================== MENU DE NAVEGACION ==================== */
-        .nav-flex {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-        }
-
-        .menu-links {
-            display: flex;
-            align-items: center;
-        }
-
-        .menu-links a {
-            text-decoration: none;
-            color: #18191F;
-            margin: 0 15px;
-            font-size: 14px;
-            font-weight: 400;
-        }
-
-        .menu-links a.active {
-            font-weight: 500;
-            color: #18191F;
-        }
-
-        .menu-botones button {
-            padding: 9px 18px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 500;
-            transition: all 0.3s;
-        }
-
-        .btn-login {
-            background: transparent;
-            color: #4CAF50;
-            border: none;
-            margin-right: 10px;
-        }
-
-        .btn-login:hover {
-            background-color: rgba(76, 175, 80, 0.1);
-        }
-
-        .btn-signup {
-            background-color: #4CAF50;
-            color: #FFFFFF;
-            border: none;
-        }
-
-        .btn-signup:hover {
-            background-color: #388E3C;
-        }
-
-        /* ==================== BANNER PRINCIPAL ==================== */
-        .banner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 50px 0;
-        }
-
-        .banner .textos {
-            width: 55%;
-        }
-
-        .banner .textos h1 {
-            font-size: 48px;
-            color: #4D4D4D;
-            line-height: 56px;
-            font-weight: 600;
-            margin-bottom: 16px;
-        }
-
-        .banner .textos p {
-            color: #717171;
-            margin-bottom: 24px;
-            font-size: 14px;
-        }
-
-        .banner img {
-            width: 35%;
-            height: auto;
-        }
-
-        /* ==================== CLIENTES Y COMUNIDAD ==================== */
-        .grupo-img {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 20px 0 40px 0;
-            gap: 15px;
-        }
-
-        .grupo-img img {
-            height: 32px;
-            width: auto;
-            object-fit: contain;
-        }
-
-        .grupo-card {
-            display: flex;
-            justify-content: space-between;
-            align-items: stretch;
-            gap: 24px;
-            margin-top: 10px;
-        }
-
-        .card {
-            background-color: #FFFFFF;
-            padding: 24px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.03);
-            flex: 1;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .icono-contenedor {
-            background-color: #E8F5E9;
-            width: 48px;
-            height: 48px;
-            border-radius: 8px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 16px;
-        }
-
-        .icono-contenedor img {
-            width: 28px;
-            height: 28px;
-        }
-
-        .card h3 {
-            color: #4D4D4D;
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 12px;
-            line-height: 26px;
-        }
-
-        .card p {
-            color: #717171;
-            font-size: 13px;
-            line-height: 20px;
-        }
-
-        /* ==================== CTA FINAL ==================== */
-        .cta-final {
-            padding: 48px 0;
-        }
-
-        .contenedor-cta {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .cta-final h2 {
-            font-size: 40px;
-            color: #263238;
-            line-height: 48px;
-            font-weight: 600;
-            margin-bottom: 24px;
-        }
-
-        /* ==================== FOOTER ==================== */
-        .footer-oscuro {
-            background-color: #263238;
-            color: #F5F7FA;
-            padding: 40px 0;
-        }
-
-        .footer-flex {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding: 20px 0;
-        }
-
-        .footer-info {
-            width: 30%;
-        }
-
-        .footer-logo {
-            margin-bottom: 25px;
-            height: 24px;
-        }
-
-        .footer-info p {
-            font-size: 13px;
-            color: #F5F7FA;
-            line-height: 22px;
-        }
-
-        .footer-enlaces {
-            width: 65%;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .columna-enlaces {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .columna-enlaces h4 {
-            font-size: 16px;
-            color: #FFFFFF;
-            margin-bottom: 20px;
-            font-weight: 500;
-        }
-
-        .columna-enlaces a {
-            color: #F5F7FA;
-            text-decoration: none;
-            font-size: 13px;
-            margin-bottom: 12px;
-            transition: color 0.2s;
-        }
-
-        .columna-enlaces a:hover {
-            color: #4CAF50;
-        }
-
-        .input-contenedor input {
-            background-color: rgba(255, 255, 255, 0.1);
-            border: none;
-            padding: 10px 15px;
-            border-radius: 6px;
-            color: #FFFFFF;
-            font-size: 13px;
-            width: 200px;
-        }
-
-        .input-contenedor input::placeholder {
-            color: #D9DBE1;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos/generales.css">
+    <link rel="stylesheet" href="estilos/menu.css">
+    <link rel="stylesheet" href="estilos/banner.css">
+    <link rel="stylesheet" href="estilos/community.css">
+    <title>Nexcent - Evaluación AEW</title>
 </head>
 <body>
     <header class="color-fondo">
         <nav class="contenedor nav-flex">
-            <img src="./img/logo.png" alt="logo">
+            <img src="img/logo.png" alt="Nexcent Logo">
             <div class="menu-links">
                 <a href="#" class="active">Home</a>
                 <a href="#">Service</a>
@@ -334,46 +36,39 @@
                 <p>Where to grow your business as a photographer: site or social media?</p>
                 <button class="btn-primario">Register</button>
             </div>
-            <img src="./img/Illustration.png" alt="Illustration">
+            <img src="img/Illustration.png" alt="Illustration">
         </div>
       </section>
 
       <section class="contenedor seccion-centrada">
         <h2>Our Clients</h2>
-        <p class="subtitulo">We have been working with some Fortune 500+ clients</p>
+        <p>We have been working with some Fortune 500+ clients</p>
         <div class="grupo-img">
-            <img src="./img/Logo1.png" alt="Logo 1">
-            <img src="./img/Logo2.png" alt="Logo 2">
-            <img src="./img/Logo3.png" alt="Logo 3">
-            <img src="./img/Logo4.png" alt="Logo 4">
-            <img src="./img/Logo5.png" alt="Logo 5">
-            <img src="./img/Logo6.png" alt="Logo 6">
-            <img src="./img/Logo7.png" alt="Logo 7">
+            <img src="img/Logo1.png" alt="Cliente 1">
+            <img src="img/Logo2.png" alt="Cliente 2">
+            <img src="img/Logo3.png" alt="Cliente 3">
+            <img src="img/Logo4.png" alt="Cliente 4">
+            <img src="img/Logo5.png" alt="Cliente 5">
+            <img src="img/Logo6.png" alt="Cliente 6">
         </div>
       </section>
 
       <section class="contenedor seccion-centrada">
-          <h2>Manage your entire community in a single system</h2>
-          <p class="subtitulo">Who is Nextcent suitable for?</p>
+          <h2 class="titulo-mediano">Manage your entire community in a single system</h2>
+          <p>Who is Nextcent suitable for?</p>
           <div class="grupo-card">
             <div class="card">
-                <div class="icono-contenedor">
-                    <img src="./img/Icon1.png" alt="Icon 1">
-                </div>
+                <img src="img/Icon1.png" alt="Membership">
                 <h3>Membership Organisations</h3>
                 <p>Our membership management software provides full automation of membership renewals and payments</p>
             </div>
             <div class="card">
-                <div class="icono-contenedor">
-                    <img src="./img/Icon2.png" alt="Icon 2">
-                </div>
+                <img src="img/Icon2.png" alt="National">
                 <h3>National Associations</h3>
                 <p>Our membership management software provides full automation of membership renewals and payments</p>
             </div>
             <div class="card">
-                <div class="icono-contenedor">
-                    <img src="./img/Icon3.png" alt="Icon 3">
-                </div>
+                <img src="img/Icon3.png" alt="Clubs">
                 <h3>Clubs And Groups</h3>
                 <p>Our membership management software provides full automation of membership renewals and payments</p>
             </div>
@@ -381,44 +76,17 @@
       </section>
 
       <section class="color-fondo seccion-centrada cta-final">
-          <div class="contenedor-cta">
-              <h2>Pellentesque suscipit <br>fringilla libero eu.</h2>
-              <button class="btn-primario">Get a Demo &rarr;</button>
+          <div class="contenedor">
+              <h2 class="titulo-grande">Pellentesque suscipit fringilla libero eu.</h2>
+              <button class="btn-primario">Get a Demo</button>
           </div>
       </section>
     </main>
 
     <footer class="footer-oscuro">
-        <div class="contenedor footer-flex">
-            <div class="footer-info">
-                <img src="./img/logo-white.png" alt="Logo Blanco" class="footer-logo">
-                <p>Copyright &copy; 2026 Nexcent ltd.</p>
-                <p>All rights reserved.</p>
-            </div>
-            <div class="footer-enlaces">
-                <div class="columna-enlaces">
-                    <h4>Company</h4>
-                    <a href="#">About us</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact us</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Testimonials</a>
-                </div>
-                <div class="columna-enlaces">
-                    <h4>Support</h4>
-                    <a href="#">Help center</a>
-                    <a href="#">Terms of service</a>
-                    <a href="#">Legal</a>
-                    <a href="#">Privacy policy</a>
-                    <a href="#">Status</a>
-                </div>
-                <div class="columna-enlaces">
-                    <h4>Stay up to date</h4>
-                    <div class="input-contenedor">
-                        <input type="email" placeholder="Your email address">
-                    </div>
-                </div>
-            </div>
+        <div class="contenedor seccion-centrada">
+            <img src="img/logo-white.png" alt="Nexcent Logo Blanco">
+            <p>Copyright © 2026 Nexcent ltd. All rights reserved.</p>
         </div>
     </footer>
 </body>
