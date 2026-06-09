@@ -1,97 +1,39 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-  }
-
-body {
-color: #4D4D4D;
-background-color: #FFFFFF;
-}
-
-.contenedor {
-width: 80%;
-max-width: 1152px;
-margin: 0 auto;
-}
-
-.color-fondo {
-background-color: #F5F7FA;
-}
-
-.seccion-centrada {
-text-align: center;
-padding: 48px 0;
-}
-
-.subtitulo {
-color: #717171;
-font-size: 16px;
-margin-top: 8px;
-}
-
-.btn-primario {
-background-color: #4CAF4F;
-color: white;
-border: none;
-border-radius: 4px;
-padding: 14px 32px;
-font-size: 16px;
-cursor: pointer;
-}
-
-.btn-primario:hover {
-background-color: #43A047;
-}
-
-.from {
-color: #4CAF4F;
-}
-
-.cta-final {
-background-color: #F5F7FA;
-padding: 48px 0;
-}
-
-.contenedor-cta {
-width: 887px;
-margin: 0 auto;
-text-align: center;
-}
-
-.contenedor-cta h2 {
-font-size: 64px;
-font-weight: 600;
-line-height: 76px;
-color: #263238;
-margin-bottom: 32px;
-}
-
-.footer-oscuro {
-background-color: #263238;
-color: white;
+.banner {
+display: flex;
+justify-content: space-between;
+align-items: center;
+min-height: 500px;
 padding: 40px 0;
 }
 
-.footer-flex {
-display: flex;
-align-items: flex-start;
+.banner .textos {
+width: 52%;
 }
 
-.footer-info {
-width: 100%;
+.banner .textos h1 {
+font-size: 64px;
+font-weight: 600;
+line-height: 76px;
+color: #4D4D4D;
+margin-bottom: 16px;
 }
 
-.footer-logo {
-width: 111.49px;
-height: 20.66px;
-margin-bottom: 20px;
+.banner .textos p {
+color: #717171;
+font-size: 16px;
+line-height: 24px;
+margin-bottom: 32px;
 }
 
-.footer-info p {
-font-size: 14px;
-line-height: 20px;
-margin-bottom: 8px;
-color: #F5F7FA;
+.banner img {
+width: 38%;
+height: auto;
+}
+
+.lessons {
+color: #4D4D4D;
+}
+
+.banner .btn-primario {
+margin-top: 8px;
 }
