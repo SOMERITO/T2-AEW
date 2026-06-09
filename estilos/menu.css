@@ -6,7 +6,8 @@ padding: 25px 0;
 }
 
 .nav-flex img {
-width: 155px;
+    width: 110px;
+    height: auto;
 }
 
 .menu-links a {
