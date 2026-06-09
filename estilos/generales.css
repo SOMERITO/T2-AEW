@@ -1,26 +1,33 @@
-/* Reseteo básico e importación de fuente */
+/* Reset general */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif; /* Ajusta la fuente según la imagen */
+    font-family: Arial, sans-serif;
 }
 
+body {
+    color: #4D4D4D;
+}
+
+/* Contenedor principal */
 .contenedor {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 0;
 }
 
+/* Fondos */
 .color-fondo {
     background-color: #F5F7FA;
 }
 
 .seccion-centrada {
     text-align: center;
+    padding: 60px 0;
 }
 
+/* Botón principal */
 .btn-primario {
     background-color: #4CAF50;
     color: white;
@@ -31,16 +38,93 @@
     font-size: 16px;
 }
 
+.btn-primario:hover {
+    background-color: #43A047;
+}
+
+/* Texto verde */
 .texto-verde {
     color: #4CAF50;
 }
 
-/* Footer (Punto 6 de la rúbrica) */
+/* Subtítulos */
+.subtitulo {
+    color: #717171;
+    margin-top: 10px;
+}
+
+/* CTA FINAL */
+.cta-final {
+    background-color: #F5F7FA;
+    padding: 60px 0;
+}
+
+.contenedor-cta {
+    text-align: center;
+}
+
+.contenedor-cta h2 {
+    font-size: 3rem;
+    color: #263238;
+    margin-bottom: 25px;
+}
+
+/* FOOTER */
 .footer-oscuro {
     background-color: #263238;
     color: white;
-    padding: 40px 0;
+    padding: 60px 0;
 }
-.footer-oscuro img {
-    margin-bottom: 15px;
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.footer-info {
+    flex: 1;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+    max-width: 180px;
+}
+
+.footer-info p {
+    margin-bottom: 5px;
+}
+
+.footer-enlaces {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna-enlaces {
+    display: flex;
+    flex-direction: column;
+}
+
+.columna-enlaces h4 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.columna-enlaces a {
+    color: #D9DBE1;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.columna-enlaces a:hover {
+    color: white;
+}
+
+.input-contenedor input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 220px;
 }
