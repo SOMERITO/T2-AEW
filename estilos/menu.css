@@ -2,36 +2,38 @@
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 25px 0;
+padding: 22px 0;
 }
 
 .nav-flex img {
-    width: 110px;
-    height: auto;
+width: 111.49px;
+height: 20.66px;
 }
 
 .menu-links a {
 text-decoration: none;
 color: #18191F;
 margin: 0 18px;
-font-size: 15px;
+font-size: 16px;
+font-weight: 400;
 }
 
 .menu-links a.active {
 color: #2194F3;
-font-weight: 600;
+font-weight: 500;
 }
 
 .menu-botones button {
 border: none;
 padding: 10px 20px;
-border-radius: 5px;
+border-radius: 4px;
 cursor: pointer;
+font-size: 14px;
 }
 
 .btn-login {
-background: #F5F7FA;
-color: #717171;
+background: transparent;
+color: #4CAF4F;
 }
 
 .btn-signup {
