@@ -13,7 +13,8 @@
 }
 
 .menu-links a.active {
-    font-weight: bold;
+    font-weight: 600;
+    color: #2194F3;
 }
 
 .menu-botones button {
